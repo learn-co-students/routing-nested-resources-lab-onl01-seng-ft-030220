@@ -69,10 +69,5 @@ class SongsController < ApplicationController
   def song_params
     params.require(:song).permit(:title, :artist_name)
   end
-
-  def is_integer?(input)
-    input.to_i.to_s == input
-  end
-
 end
 
